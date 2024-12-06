@@ -1,17 +1,18 @@
 # Use an official Python runtime as a parent image
 FROM python:3.10-slim
 
-# Set the working directory in the container
-WORKDIR /app
-
-# Install system dependencies
+# Install system dependencies for audio
 RUN apt-get update && apt-get install -y \
     build-essential \
     curl \
     portaudio19-dev \
+    python3-pyaudio \
+    alsa-utils \
+    pulseaudio \
+    libsndfile1 \
     software-properties-common \
-    espeak \
-    libespeak-dev \
+    libportaudio2 \
+    libasound2-dev \
     libsm6 \
     libxext6 \
     libxrender-dev \
@@ -19,10 +20,11 @@ RUN apt-get update && apt-get install -y \
     ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy only requirements first to leverage docker cache
-COPY requirements.txt .
+# Set the working directory in the container
+WORKDIR /app
 
-# Install Python dependencies
+# Copy requirements and install Python dependencies
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application
@@ -30,6 +32,10 @@ COPY . .
 
 # Expose the port Streamlit will run on
 EXPOSE 8501
+
+# Configure ALSA and PulseAudio (optional)
+ENV PULSE_SERVER=/run/pulse/native
+ENV PULSE_RUNTIME_PATH=/run/user/1000
 
 # Health check
 HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
