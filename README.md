@@ -1,11 +1,8 @@
-## Talk Tuah Therapist 🧠💭
+# Talk Tuah Therapist 🧠💭
 
 ## 🌟 Overview
 
 Talk Tuah Therapist is a comprehensive mental health support application that combines AI-powered chat therapy with interactive wellness tools. It provides a safe, accessible space for users to manage their mental health journey through various therapeutic features.
-## ⚡Live Site Link
-
-https://talk-tuah-therapist-1o0g.onrender.com
 
 ## ✨ Features
 
