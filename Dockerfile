@@ -18,8 +18,7 @@ RUN apt-get update && apt-get install -y \
     libxrender-dev \
     libgl1-mesa-glx \
     ffmpeg \
-    espeak \  # Add espeak package
-    libespeak1 \  # Add libespeak library
+    espeak \
     && rm -rf /var/lib/apt/lists/*
 
 # Set the working directory in the container
