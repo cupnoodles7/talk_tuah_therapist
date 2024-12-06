@@ -11,6 +11,9 @@ PyAudio==0.2.14
 scipy==1.12.0
 wave==0.0.2
 
+# Alternative Audio Libraries (optional)
+soundfile==0.12.1
+
 # AI and Machine Learning
 clarifai-grpc==9.11.0
 google-generativeai==0.3.2
