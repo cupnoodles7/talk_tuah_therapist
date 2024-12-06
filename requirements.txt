@@ -7,11 +7,11 @@ SpeechRecognition==3.10.1
 gTTS==2.5.1
 pyttsx3==2.90
 sounddevice==0.4.6
-PyAudio==0.2.14
+pyaudio==0.2.14  # Note the lowercase 'p'
 scipy==1.12.0
 wave==0.0.2
 
-# Alternative Audio Libraries (optional)
+# Alternative Audio Libraries
 soundfile==0.12.1
 
 # AI and Machine Learning
@@ -29,12 +29,3 @@ requests==2.31.0
 # Utility Libraries
 pathlib==1.0.1
 datetime==4.3
-
-# Additional potentially useful libraries
-# Uncomment or add as needed
-# opencv-python==4.8.1.78
-# scikit-learn==1.3.2
-
-# Development and testing (optional)
-# pytest==7.4.4
-# pylint==3.0.3
