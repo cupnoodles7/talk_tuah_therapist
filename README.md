@@ -82,6 +82,7 @@ http://localhost:8501
 
 The application uses several API keys and configurations:
 - Clarifai API for AI chat functionality
+- Gemini API for voice assistance
 - Various audio files for sound therapy
 - Custom UI components and styling
 
