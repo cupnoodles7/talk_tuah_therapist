@@ -1,7 +1,7 @@
 # Use an official Python runtime as a parent image
 FROM python:3.10-slim
 
-# Install system dependencies for audio
+# Install system dependencies for audio and other requirements
 RUN apt-get update && apt-get install -y \
     build-essential \
     curl \
@@ -18,6 +18,8 @@ RUN apt-get update && apt-get install -y \
     libxrender-dev \
     libgl1-mesa-glx \
     ffmpeg \
+    espeak \  # Add espeak package
+    libespeak1 \  # Add libespeak library
     && rm -rf /var/lib/apt/lists/*
 
 # Set the working directory in the container
