@@ -31,9 +31,9 @@ from threading import Thread
 
 
 # Constants for Clarifai API
-PAT = 'c50e0fac59ce46aeb7991be5253b7bd4'
-USER_ID = 'anthropic'
-APP_ID = 'completion'
+PAT = 'you_PAT_key'
+USER_ID = 'your_user_id'
+APP_ID = 'your_app_id'
 MODEL_ID = 'claude-3-opus'
 MODEL_VERSION_ID = '0b59b93d35864b9b88699a557629babf'
 
