@@ -5,7 +5,7 @@
 Talk Tuah Therapist is a comprehensive mental health support application that combines AI-powered chat therapy with interactive wellness tools. It provides a safe, accessible space for users to manage their mental health journey through various therapeutic features.
 
 ### Hosted on Render
--[Visit the Website]((https://talk-tuah-therapist1.onrender.com))
+-[Visit the Website](https://talk-tuah-therapist1.onrender.com)
 - The website is hosted on Render.  
 - Environment variables are securely managed via Render's dashboard.  
 - Dependencies are installed automatically using `requirements.txt`.  
