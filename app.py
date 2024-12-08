@@ -1,4 +1,6 @@
+
 import os
+from dotenv import load_dotenv
 import streamlit as st
 import speech_recognition as sr
 from clarifai_grpc.channel.clarifai_channel import ClarifaiChannel
@@ -6,32 +8,28 @@ from clarifai_grpc.grpc.api import resources_pb2, service_pb2, service_pb2_grpc
 from clarifai_grpc.grpc.api.status import status_code_pb2
 from gtts import gTTS
 from streamlit_drawable_canvas import st_canvas
-from datetime import datetime  # Importing datetime class
+from datetime import datetime
 import random
 import time
 import requests
 import numpy as np
 from scipy.io import wavfile
-from threading import Thread
 import io
 from pathlib import Path
 import sounddevice as sd
 import google.generativeai as genai
 import pyttsx3
-import numpy as np
 import wave
 import plotly.graph_objects as go
 import pandas as pd
-from datetime import datetime, timedelta
-import sounddevice as sd
-import google.generativeai as genai
-import pyttsx3
 from threading import Thread
 
+def configure():
+    load_dotenv()
 
 
 # Constants for Clarifai API
-PAT = 'c50e0fac59ce46aeb7991be5253b7bd4'
+PAT = os.getenv('PAT')
 USER_ID = 'anthropic'
 APP_ID = 'completion'
 MODEL_ID = 'claude-3-opus'
@@ -174,6 +172,7 @@ def init_styles():
     st.markdown(page_bg_style, unsafe_allow_html=True)
 
 def main():
+    configure()
     init_styles()
 
 
