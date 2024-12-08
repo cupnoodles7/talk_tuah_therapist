@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: your-streamlit-app
+    runtime: docker
+    plan: free
+    buildCommand: docker build -t streamlit-app .
+    startCommand: docker run -p 8501:8501 streamlit-app

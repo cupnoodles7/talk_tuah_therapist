@@ -1,0 +1,31 @@
+# Core Web and UI Libraries
+streamlit==1.32.0
+streamlit-drawable-canvas==0.9.3
+
+# Speech and Audio Processing
+SpeechRecognition==3.10.1
+gTTS==2.5.1
+pyttsx3==2.90
+sounddevice==0.4.6
+pyaudio==0.2.14  # Note the lowercase 'p'
+scipy==1.12.0
+wave==0.0.2
+
+# Alternative Audio Libraries
+soundfile==0.12.1
+
+# AI and Machine Learning
+clarifai-grpc==9.11.0
+google-generativeai==0.3.2
+
+# Data Manipulation and Visualization
+numpy==1.26.4
+pandas==2.2.1
+plotly==5.18.0
+
+# Web and Network Requests
+requests==2.31.0
+
+# Utility Libraries
+pathlib==1.0.1
+datetime==4.3
