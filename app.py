@@ -220,10 +220,10 @@ def main():
 
     st.markdown("""
 Created with ❤ for mental health awareness
+By:Akriti Kh,Bhoomika K S,Chidananda S,Rohith BN
 
 For support, email: talktuahtherapist03@gmail.com  
 For Queries, dm on <a href="https://www.instagram.com/talktuahtherapist">TalkTuahTherapist</a>
-Developed by:Akriti Khetan,Bhoomika K S,Chidananda Singh,Rohith BN 
 """, unsafe_allow_html=True)
 
         
